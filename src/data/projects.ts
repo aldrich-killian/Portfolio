@@ -40,7 +40,7 @@ export const projectsData = [
       "A developer networking platform built with the MERN stack featuring user connections and real-time chat.",
     fullDescription:
       "DevTinder is a full-stack web application that allows developers to discover profiles, send connection requests, and communicate through real-time chat. The platform includes authentication, profile management, and secure route access. Razorpay payment integration was added to support premium features.",
-    image: "/projects/devtinder.png",
+    image: "/projects/devtinder.jpeg",
     githubUrl: "https://github.com/vaibhav-madan-20/DevTinder",
     liveUrl: "https://devtinder.vaibhavmadan.in",
     tags: ["MERN Stack", "Social Media", "Razorpay"],
@@ -64,7 +64,7 @@ export const projectsData = [
     githubUrl: "https://github.com/vaibhav-madan-20/Chess",
     liveUrl: "https://chess.vaibhavmadan.in",
     tags: ["MERN Stack", "WebSocket"],
-    image: "/projects/chess.png",
+    image: "/projects/chess.jpeg",
     techStack: [
       "React",
       "Node.js",
@@ -98,7 +98,7 @@ export const projectsData = [
     liveUrl: "https://netflix-gpt-two-zeta.vercel.app/",
     tags: ["React", "Firebase"],
     techStack: ["React", "Firebase", "TMDB API", "YouTube API", "Gemini"],
-    image: "/projects/movie website.png",
+    image: "/projects/movie website.jpeg",
     features: [
       "User authentication with Firebase",
       "Movie browsing and search",
@@ -119,7 +119,7 @@ export const projectsData = [
     liveUrl: "https://swiggy-clone-pearl.vercel.app/",
     tags: ["React", "Testing"],
     techStack: ["React", "Jest", "React Testing Library"],
-    image: "/projects/food app.png",
+    image: "/projects/food app.jpeg",
     features: [
       "Restaurant listings and menu browsing",
       "Search and filtering functionality",
@@ -136,7 +136,7 @@ export const projectsData = [
       "A Python script to download images from Google Images based on a search query.",
     fullDescription:
       "A small Python script that uses Selenium to open Google Images, collect image URLs, and download them using HTTP requests. It was mainly created to automate downloading images for personal use instead of doing it manually.",
-    image: "/projects/google images downloader.png",
+    image: "/projects/google images downloader.jpeg",
     tags: ["Python", "Selenium"],
     techStack: ["Python", "Selenium", "Requests"],
     githubUrl: "https://github.com/vaibhav-madan-20/Google-images-downloader",
@@ -155,7 +155,7 @@ export const projectsData = [
       "A React-based YouTube inspired video app that allows users to browse and watch videos using the YouTube Data API.",
     fullDescription:
       "A frontend project built with React that replicates basic YouTube functionality such as browsing videos, searching, and watching content. The application integrates the YouTube Data API for fetching video data and uses the YouTube player for playback. It also includes a simple simulated live chat feature for the watch page.",
-    image: "/projects/video app.png",
+    image: "/projects/video app.jpeg",
     tags: ["React", "YouTube API"],
     techStack: ["React", "YouTube API"],
     githubUrl: "https://github.com/vaibhav-madan-20/Video-app",

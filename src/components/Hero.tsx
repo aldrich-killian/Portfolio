@@ -151,7 +151,7 @@ const Hero = () => {
             {/* subtle framed border */}
             <div className="rounded-3xl p-1 bg-white/60 dark:bg-black/30 relative">
               <img
-                src="/Vaibhav-PFP.png"
+                src="/Vaibhav-PFP.jpeg"
                 alt="Profile"
                 className="w-full h-[420px] sm:h-[500px] md:h-[550px] object-cover rounded-2xl transition-transform duration-500 scale-150 sm:scale-100 sm:group-hover:scale-105"
               />
