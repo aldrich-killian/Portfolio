@@ -7,6 +7,7 @@ import Projects from "@/components/Projects";
 // import FAQ from "@/components/FAQ";
 import Contact from "@/components/Contact";
 import MobileFAB from "@/components/MobileFAB";
+import Footer from "@/components/Footer";
 
 const Index = () => {
   useEffect(() => {
@@ -39,6 +40,7 @@ const Index = () => {
         <Projects />
         {/* <FAQ /> */}
         <Contact />
+        <Footer />
         <MobileFAB />
       </div>
     </div>

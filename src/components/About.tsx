@@ -46,15 +46,9 @@ const About = () => {
               </p>
 
               <p>
-                I primarily work on full-stack web development using the MERN
-                stack, building scalable and user-focused applications such as a
-                developer networking platform, an online multiplayer chess
-                application, and interactive web interfaces. Alongside
-                development, I actively strengthen my problem-solving skills by solving DSA problems.
-              </p>
-
-              <p>
-                I enjoy building applications that people can actually use.
+                I focus on full-stack development using the MERN stack, along
+                with Python for scripting, and I’m continuously
+                working on improving my problem-solving skills.
               </p>
             </div>
           </div>

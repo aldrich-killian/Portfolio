@@ -4,7 +4,7 @@ import { useScrollAnimation } from "@/hooks/useScrollAnimation";
 import { useEffect, useState, useRef } from "react";
 import { useFastFloat } from "@/hooks/useFastFloat";
 
-import { DEVELOPER_TYPE, HEADING, RESUME_LINK, TOP_DESCRIPTION } from "../utils/constants";
+import { RESUME_URL } from "../utils/constants";
 
 const Hero = () => {
   const { ref: heroRef, isVisible: heroVisible } = useScrollAnimation();
@@ -91,25 +91,26 @@ const Hero = () => {
             {isNarrow ? (
               <div className="marquee" aria-hidden>
                 <div className="marquee__inner bg-black text-white px-6 py-2 rounded-full text-sm font-medium uppercase tracking-wide">
-                  <span>{DEVELOPER_TYPE}</span>
+                  <span>Software engineer</span>
                 </div>
               </div>
             ) : (
               <span className="bg-black text-white px-6 py-2 rounded-full text-sm font-medium uppercase tracking-wide">
-                {DEVELOPER_TYPE}
+                Software engineer
               </span>
             )}
           </div>
 
           <h1 className="text-5xl md:text-7xl font-bold leading-tight">
-            {HEADING}
+            Designing and building web applications
           </h1>
 
-          <p className="text-lg text-muted-foreground max-w-lg">
+          <p className="text-lg text-muted-foreground max-w-lg text-justify">
             Hi, I'm{" "}
             <span className="text-foreground font-medium">Vaibhav Madan</span>.{" "}
-            <br></br>
-            {TOP_DESCRIPTION}
+            <br></br>I’m a third-year Computer Science undergraduate and
+            full-stack developer. I’m interested in creating reliable software
+            and improving my skills through hands-on projects.
           </p>
 
           <div className="flex flex-wrap gap-4">
@@ -130,12 +131,7 @@ const Hero = () => {
               size="lg"
               variant="outline"
               className="rounded-full gap-2 px-8 py-6 text-base font-medium border-2 border-black dark:border-white hover:bg-black hover:text-white hover:border-white dark:hover:bg-white dark:hover:text-black dark:hover:border-black"
-              onClick={() =>
-                window.open(
-                  RESUME_LINK,
-                  "_blank",
-                )
-              }
+              onClick={() => window.open(RESUME_URL, "_blank")}
             >
               View Resume
               <Download className="w-5 h-5" />
@@ -152,7 +148,7 @@ const Hero = () => {
             <div className="rounded-3xl p-1 bg-white/60 dark:bg-black/30 relative">
               <img
                 src="/Vaibhav-PFP.jpeg"
-                alt="Profile"
+                alt="Vaibhav Madan"
                 className="w-full h-[420px] sm:h-[500px] md:h-[550px] object-cover rounded-2xl transition-transform duration-500 scale-150 sm:scale-100 sm:group-hover:scale-105"
               />
               {/* Vignette effect overlay - dark mode only */}

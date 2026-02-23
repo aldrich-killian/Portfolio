@@ -11,7 +11,7 @@ import {
   SheetTrigger,
 } from "@/components/ui/sheet";
 
-import {TALLY_FORM} from "../utils/constants";
+import {TALLY_FORM_URL} from "../utils/constants";
 
 const Navbar = () => {
   const [mousePos, setMousePos] = useState({ x: 0, y: 0 });
@@ -220,7 +220,7 @@ const Navbar = () => {
               ))}
               <ThemeToggle />
               <a
-                href={TALLY_FORM}
+                href={TALLY_FORM_URL}
                 target="_blank"
                 rel="noopener noreferrer"
               >
@@ -302,7 +302,7 @@ const Navbar = () => {
                             </a>
                           ))}
                           <a
-                            href={TALLY_FORM}
+                            href={TALLY_FORM_URL}
                             target="_blank"
                             rel="noopener noreferrer"
                             onClick={closeMenu}

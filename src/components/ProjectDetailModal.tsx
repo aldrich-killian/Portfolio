@@ -181,9 +181,9 @@ const ProjectDetailModal = ({ project, isOpen, onClose }: ProjectDetailModalProp
             {/* Tabs */}
             <Tabs defaultValue="overview" className="mb-6">
               <div className="sticky top-0 z-50 pb-4 bg-background/95 backdrop-blur-md">
-                <TabsList className="w-full grid grid-cols-2">
+                <TabsList className="w-full grid grid-cols-1">
                   <TabsTrigger value="overview" className="rounded-full">Overview</TabsTrigger>
-                  <TabsTrigger value="technical" className="rounded-full">Technical</TabsTrigger>
+                  {/* <TabsTrigger value="technical" className="rounded-full">Technical</TabsTrigger> */}
                 </TabsList>
               </div>
 
@@ -247,13 +247,13 @@ const ProjectDetailModal = ({ project, isOpen, onClose }: ProjectDetailModalProp
 
               <TabsContent value="technical" className="space-y-6 mt-0">
                 {/* Implementation */}
-                <div className="space-y-2">
+                {/* <div className="space-y-2">
                   <h3 className="font-semibold text-lg">Implementation</h3>
                   <p className="text-muted-foreground text-sm leading-relaxed break-words overflow-wrap-anywhere">{technical.approach}</p>
-                </div>
+                </div> */}
 
                 {/* Technology Choices */}
-                {technical.technologyChoices && (
+                {/* {technical.technologyChoices && (
                   <div className="space-y-3">
                     <h3 className="font-semibold text-lg">Technology Choices</h3>
                     <div className="space-y-2">
@@ -265,7 +265,7 @@ const ProjectDetailModal = ({ project, isOpen, onClose }: ProjectDetailModalProp
                       ))}
                     </div>
                   </div>
-                )}
+                )} */}
 
                 {/* Architecture */}
                 {technical.architecture && (
@@ -508,13 +508,13 @@ const ProjectDetailModal = ({ project, isOpen, onClose }: ProjectDetailModalProp
 
                 <TabsContent value="technical" className="mt-0 space-y-6">
                   {/* Implementation Approach */}
-                  <div className="space-y-3">
+                  {/* <div className="space-y-3">
                     <h3 className="font-semibold text-xl">Implementation</h3>
                     <p className="text-muted-foreground leading-relaxed">{technical.approach}</p>
-                  </div>
+                  </div> */}
 
                   {/* Technology Choices */}
-                  {technical.technologyChoices && (
+                  {/* {technical.technologyChoices && (
                     <div className="space-y-4">
                       <h3 className="font-semibold text-xl">Technology Choices</h3>
                       <div className="grid md:grid-cols-2 gap-4">
@@ -526,7 +526,7 @@ const ProjectDetailModal = ({ project, isOpen, onClose }: ProjectDetailModalProp
                         ))}
                       </div>
                     </div>
-                  )}
+                  )} */}
 
                   {/* Architecture */}
                   {technical.architecture && (
