@@ -5,7 +5,7 @@ export const projectsData = [
     description: "A developer networking platform built with the MERN stack",
     fullDescription:
       "DevTinder is a full-stack web application that allows developers to discover profiles and send connection requests. The platform includes authentication, profile management, and secure route access. Razorpay payment integration was added to support premium features.",
-    image: "/projects/devtinder.jpeg",
+    image: "/projects/devtinder.png",
     githubUrl: "https://github.com/vaibhav-madan-20/DevTinder",
     liveUrl: "https://devtinder.vaibhavmadan.in",
     tags: ["MERN Stack", "Social Media", "Razorpay"],
@@ -55,7 +55,7 @@ export const projectsData = [
     description:
       "A React-based movie browsing application with smart search and trailer playback.",
     fullDescription:
-      "A Netflix-inspired web application built with React and Firebase that allows users to browse movies, watch trailers, and search content using AI-powered queries. The project integrates external APIs for movie data and media playback.",
+      "A Netflix-inspired web application built with React and Firebase that allows users to browse movies, watch trailers, and search content using AI-powered queries. The project integrates TMDB API for movie data and youtube for trailer playback",
     githubUrl: "https://github.com/vaibhav-madan-20/Movie-website",
     liveUrl: "https://movie.vaibhavmadan.in",
     tags: ["React", "Firebase"],
@@ -65,8 +65,7 @@ export const projectsData = [
       "User authentication with Firebase",
       "Movie browsing and search",
       "Trailer playback integration",
-      "Multi-language support",
-      "Responsive user interface",
+      "AI-powered search feature"
     ],
   },
 
@@ -111,17 +110,18 @@ export const projectsData = [
     description:
       "A React-based video app that allows users to browse and watch videos",
     fullDescription:
-      "A frontend project built with React that replicates basic YouTube functionality such as browsing videos, searching, and watching content. It integrates the YouTube Data API to fetch video information and uses the YouTube iframe player for playback. The watch page also includes a simple simulated live chat feature.",
+      "A frontend project built with React that replicates basic YouTube functionality - browsing videos, searching, and watching content. It integrates the YouTube Data API to fetch video information and uses the YouTube iframe player for playback. The watch page also includes a simple simulated live chat feature and comments section",
     image: "/projects/video app.jpeg",
     tags: ["React", "YouTube API"],
     techStack: ["React", "YouTube API"],
     githubUrl: "https://github.com/vaibhav-madan-20/Video-app",
-    liveUrl: "https://video-app.vaibhavmadan.in",
+    liveUrl: "https://video.vaibhavmadan.in",
     features: [
       "Video browsing using YouTube Data API",
       "Search functionality",
       "Video playback with embedded player",
       "Simulated live chat on the watch page",
+      "Comments section"
     ],
   },
 ];
