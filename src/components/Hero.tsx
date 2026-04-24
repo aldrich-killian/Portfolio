@@ -17,25 +17,33 @@ const Hero = () => {
   const { animate } = useFastFloat();
 
   useEffect(() => {
-    const mq = typeof window !== 'undefined' && window.matchMedia ? window.matchMedia('(max-width: 767px)') : null;
+    const mq =
+      typeof window !== "undefined" && window.matchMedia
+        ? window.matchMedia("(max-width: 767px)")
+        : null;
     const update = () => {
-      const inner = typeof window !== 'undefined' ? window.innerWidth <= 767 : false;
+      const inner =
+        typeof window !== "undefined" ? window.innerWidth <= 767 : false;
       setIsMobile((mq && mq.matches) || inner);
     };
     update();
-    mq?.addEventListener?.('change', update);
-    return () => mq?.removeEventListener?.('change', update);
+    mq?.addEventListener?.("change", update);
+    return () => mq?.removeEventListener?.("change", update);
   }, []);
 
   useEffect(() => {
-    const mq = typeof window !== 'undefined' && window.matchMedia ? window.matchMedia('(max-width: 360px)') : null;
+    const mq =
+      typeof window !== "undefined" && window.matchMedia
+        ? window.matchMedia("(max-width: 360px)")
+        : null;
     const update = () => {
-      const inner = typeof window !== 'undefined' ? window.innerWidth <= 360 : false;
+      const inner =
+        typeof window !== "undefined" ? window.innerWidth <= 360 : false;
       setIsNarrow((mq && mq.matches) || inner);
     };
     update();
-    mq?.addEventListener?.('change', update);
-    return () => mq?.removeEventListener?.('change', update);
+    mq?.addEventListener?.("change", update);
+    return () => mq?.removeEventListener?.("change", update);
   }, []);
 
   useEffect(() => {
@@ -46,14 +54,19 @@ const Hero = () => {
       const stopC = animate(blobC.current);
       const stopD = animate(blobD.current);
       return () => {
-        stopA(); stopB(); stopC(); stopD();
+        stopA();
+        stopB();
+        stopC();
+        stopD();
       };
     }
     // when not mobile, ensure blobs have no inline transform
-    [blobA, blobB, blobC, blobD].forEach((r) => { if (r.current) r.current.style.transform = ''; });
+    [blobA, blobB, blobC, blobD].forEach((r) => {
+      if (r.current) r.current.style.transform = "";
+    });
     return;
   }, [isMobile]);
-  
+
   return (
     <section
       ref={heroRef}
@@ -145,12 +158,15 @@ const Hero = () => {
         >
           <div className="relative rounded-3xl overflow-hidden shadow-2xl group">
             {/* subtle framed border */}
-            <div className="rounded-3xl p-1 bg-white/60 dark:bg-black/30 relative">
+            <div className="w-full rounded-3xl bg-white/60 dark:bg-black/30 relative flex justify-center">
+
+
               <img
                 src="/Vaibhav-PFP.jpeg"
                 alt="Vaibhav Madan"
-                className="w-full h-[420px] sm:h-[500px] md:h-[550px] object-cover rounded-2xl transition-transform duration-500 scale-150 sm:scale-100 sm:group-hover:scale-105"
+                className="h-[650px] object-cover rounded-2xl transition-transform duration-500 scale-150 sm:scale-100 sm:group-hover:scale-105"
               />
+
               {/* Vignette effect overlay - dark mode only */}
               <div
                 className="absolute inset-0 rounded-2xl pointer-events-none hidden dark:block"
@@ -158,7 +174,8 @@ const Hero = () => {
                   background:
                     "radial-gradient(circle at center, transparent 30%, rgba(0,0,0,0.2) 70%, rgba(0,0,0,0.5) 100%)",
                 }}
-              ></div>
+              >
+              </div>
 
               {/* Subtle eye highlight vignette - light mode only */}
               <div
@@ -171,7 +188,10 @@ const Hero = () => {
                   opacity: 0.22,
                 }}
               />
+
+
             </div>
+
           </div>
         </div>
       </div>
